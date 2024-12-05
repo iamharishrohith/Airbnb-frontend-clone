@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./Airbnb_Logo_Bélo.svg.png" alt="Airbnb">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Become a host</a></li>
+                    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                    <li class="user-menu">
+                        <button class="user-button">
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                        <ul class="dropdown">
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Host your home</a></li>
+                            <li><a href="#">Host an experience</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <div class="container">
+                <form>
+                    <div class="search-input">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Where are you going?">
+                    </div>
+                    <div class="search-input">
+                        <label for="check-in">Check in</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div class="search-input">
+                        <label for="check-out">Check out</label>
+                        <input type="date" id="check-out">
+                    </div>
+                    <div class="search-input">
+                        <label for="guests">Guests</label>
+                        <select id="guests">
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4+ guests</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </form>
+            </div>
+        </section>
+        <nav id="nav2">
+            <div id="navbox">
+              <div id="scrollbox">
+                <div id="scrollslide">
+                  <div class="slides slide1">
+                    <div id="slideicon">
+                      <img src="./Slide icons/park.png" alt="" />
+                    </div>
+                    <span>Park</span>
+                  </div>
+                  <div class="slides slide2">
+                    <div id="slideicon">
+                      <img src="./Slide icons/cottage.png" alt="" />
+                    </div>
+                    <span>Lake Cottage</span>
+                  </div>
+                  <div class="slides slide3">
+                    <div id="slideicon">
+                      <img src="./Slide icons/coffee-cup.png" alt="" />
+                    </div>
+                    <span>Relaxing Villas</span>
+                  </div>
+                  <div class="slides slide4">
+                    <div id="slideicon">
+                      <img src="./Slide icons/mansion.png" alt="" />
+                    </div>
+                    <span>Mansion</span>
+                  </div>
+                  <div class="slides slide5">
+                    <div id="slideicon">
+                      <img src="./Slide icons/golf-field.png" alt="" />
+                    </div>
+                    <span>With court</span>
+                  </div>
+                  <div class="slides slide6">
+                    <div id="slideicon">
+                      <img src="./Slide icons/tree-house.png" alt="" />
+                    </div>
+                    <span>Tree House</span>
+                  </div>
+                  <div class="slides slide7">
+                    <div id="slideicon">
+                      <img src="./Slide icons/cabin.png" alt="" />
+                    </div>
+                    <span>Cabins</span>
+                  </div>
+                  <div class="slides slide8">
+                    <div id="slideicon">
+                      <img src="./Slide icons/park.png" alt="" />
+                    </div>
+                    <span>Nature</span>
+                  </div>
+                  <div class="slides slide9">
+                    <div id="slideicon">
+                      <img src="./Slide icons/landmark.png" alt="" />
+                    </div>
+                    <span>Near Landmarks</span>
+                  </div>
+                </div>
+                <div id="snextbtn">
+                  <div id="snbtn">
+                    <i class="fa-solid fa-angle-right fa-xs" style="color: #000000"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="cattabbox">
+                <div id="filter">
+                  <i class="fa-solid fa-sliders fa-lg" style="color: #000000"></i>
+                  <span>Filters</span>
+                </div>
+                <div id="togglebox">
+                  <span>Unsolved Problems</span>
+                  <input type="checkbox" id="switch" class="checkbox" />
+                  <label for="switch" class="toggle"></label>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <section class="listings">
+            <div class="container">
+                <div class="listing-grid">
+                    <div class="listing-card">
+                        <img src="./Card Images/1.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/2.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/3.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/4.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/1.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/2.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/3.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/4.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/5.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/6.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/7.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/8.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/9.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/10.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/11.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/12.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/13.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/14.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/15.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/16.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/17.webp" alt="Listing 1">
+                        <div class="listing-info">
+                            <h3>Cozy Apartment in City Center</h3>
+                            <p class="location">New York, USA</p>
+                            <p class="price">₹4500 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/18.webp" alt="Listing 2">
+                        <div class="listing-info">
+                            <h3>Beachfront Villa</h3>
+                            <p class="location">Bali, Indonesia</p>
+                            <p class="price">₹5000 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/19.webp" alt="Listing 3">
+                        <div class="listing-info">
+                            <h3>Mountain Cabin Retreat</h3>
+                            <p class="location">Colorado, USA</p>
+                            <p class="price">₹6700 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (80 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="./Card Images/20.webp" alt="Listing 4">
+                        <div class="listing-info">
+                            <h3>Modern Loft in Downtown</h3>
+                            <p class="location">London, UK</p>
+                            <p class="price">₹2180 / night</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (110 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety information</a></li>
+                        <li><a href="#">Cancellation options</a></li>
+                        <li><a href="#">Our COVID-19 Response</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Airbnb.org: disaster relief housing</a></li>
+                        <li><a href="#">Support Afghan refugees</a></li>
+                        <li><a href="#">Combating discrimination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hosting</h4>
+                    <ul>
+                        <li><a href="#">Try hosting</a></li>
+                        <li><a href="#">AirCover: protection for Hosts</a></li>
+                        <li><a href="#">Explore hosting resources</a></li>
+                        <li><a href="#">Visit our community forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Learn about new features</a></li>
+                        <li><a href="#">Letter from our founders</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Airbnb, Inc. All rights reserved</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
